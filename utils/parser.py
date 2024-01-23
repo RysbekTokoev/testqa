@@ -9,8 +9,8 @@ class Parser:
         """
         :param pdf_path: Путь к pdf файлу
         """
-        self.pdf_path = pdf_path
-        self.pages = extract_pages(pdf_path)
+        self.pdf_path = "data/" + pdf_path
+        self.pages = extract_pages(self.pdf_path)
 
     @staticmethod
     def get_text_elements(page: LTPage) -> List[LTTextContainer]:

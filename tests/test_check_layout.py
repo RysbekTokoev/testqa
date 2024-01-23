@@ -3,7 +3,7 @@ from data.constants import TICKET_LEFT_COL_LABELS as LEFT, TICKET_RIGHT_COL_LABE
 import pytest
 
 
-@pytest.mark.parametrize("pdf_path", ["test_task.pdf"])
+@pytest.mark.parametrize("pdf_path", ["pages/test_task.pdf"])
 def test_check_layout(pdf_path):
     """
     ''Механизм, проверяющий входящие pdf-файлы на наличие всех элементов и соответствие структуры (расположение на листе)''
